@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TEDxDYPATILUNIVERSITY</title>
+    <link rel="icon" href="X.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/e015eaaae8.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="header.css">
+ 
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="style.css">
+
+<style>
+  .hero-section {
+  background: url("Images/speakerhero.jpg") 50% no-repeat;
+background-size: cover;
+height: 60vh;
+text-align: center;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-align-items: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-justify-content: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.hero-section h1{
+  font-size: 5.5rem;
+  color: #fefefe;
+}
+.hero-section h5{
+  font-size: 2rem;
+}
+
+.hero-section .hero-section-text {
+ color: #fff;
+text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.letter-x {
+  color: red !important;
+}
+
+.speaker-title{
+padding: 0;
+}
+.speaker-title h1 {
+  font-size: 7vw;
+  text-align: center;
+  
+  background-color:black ;
+  margin-bottom: 0;
+  font-family: Poppins;
+color: #fff;
+text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+#carousel {
+  position: relative;
+  height: 800px;
+  top: 50%;
+  transform: translateY(-50%);
+  overflow: hidden;
+  z-index:-1;
+}
+#carousel div {
+  top: 400px;
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+#carousel div img {
+  width: 450px;
+  transition: width 1s;
+}
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideLeft img {
+  width: 200px;
+}
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+#carousel div.hideRight img {
+  width: 200px;
+}
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.prev img {
+  width: 300px;
+}
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+#carousel div.next img {
+  width: 300px;
+}
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+.buttons {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10px;
+}
+
+.btn-explore{
+  width: 120px;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+.btn-explore:hover{
+  background-color: red;
+}
+
+.btn-know-more {
+  width: max-content;
+  border-color: white;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+.btn-know-more:hover{
+  background-color: red;
+  color: white;
+  border: 1px solid red;
+}
+</style>
+
+<header>
+   <nav class="navbar" style="position: sticky;" >
+        <div class="brand-title">
+        	<img src="Images/TEDxDYPatilUniversityop.png" class="responsive logo"></div>
+        <a href="#" class="toggle-button" >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links" >
+          <ul class="menu" >
+            <li><a class="nav" href="index">HOME</a></li>
+            <li><a class="nav"  href="yourweeklycontemplation">BLOG</a></li>
+            <li><a class="nav"  href="aboutus">ABOUT US</a></li>
+            <!-- <li><a class="nav" href="team">THE TEAM</a></li> -->
+            <li><a class="nav" href="speakers">SPEAKERS</a></li>
+            <li><a class="nav" href="sponsors">SPONSORS</a></li>
+            <li><a class="nav" href="theme">THEMES</a></li>
+            <li><a class="nav" href="contactus">CONTACT US</a></li>
+          </ul>
+        </div>
+      </nav>
+ </header>
+
+<div class="container-title" style="margin-top: 40px;">
+ <div class="speaker-title">
+  <div class="title-word mb-3">TED<span style="color: red;">x</span> SPEAKERS 2022</div>
+  
+</div>
+</div>
+
+<span class="page-content">
+  <!--  -->
+  <div class="card" style="background-image: url(./Images/puneet.jpeg);
+      background-size: cover; height: 110%;">
+    <div class="content-card">
+      <h2 class="title">Mr. Puneeth Bekal</h2>
+      <p class="copy">Mr. Puneeth Bekal is an experienced marketing professional with over 14 years of experience in managing large scale campaigns of huge titles in the industry like CEAT, Lodha, Godrej; in digital activation, media innovations, content strategy, etc. He is currently soaring as a director of marketing at Mastercard, and holds the distinction in
+      consistently meeting and exceeding targets in a range of market subsectors.</p>
+      <!-- <a class="new-tab-redirect-links"
+        href="https://youtu.be/iUwOCVNALtw" target="_blank" rel="noopener noreferrer"><button class="btn">Watch
+          Now</button></a> -->
+    </div>
+  </div>
+
+  <div class="card" style="background-image: url(./Images/1.png);
+      background-size: cover; height: 110%;">
+    <div class="content-card">
+      <h2 class="title">Dr. Om Shrivastav</h2>
+      <p class="copy">Dr. Om Shrivastav is a well-known infectious disease specialist. Dr. Om Shrivastav has been working as an Infectious Disease Physician for the past 17 years, gaining proficiency and sparse skills in his field. He earned his MBBS and MD in India and undertook further training in Sydney, Australia. Dr. Om is a multifaceted individual, he is a member of
+      several review committees, a passionate teacher, an internationally invited orator and an exceptional author.</p>
+      <!-- <a class="new-tab-redirect-links"
+        href="https://youtu.be/6Nbp0YumfYk" target="_blank" rel="noopener noreferrer"><button class="btn">Watch
+          Now</button></a> -->
+    </div>
+  </div>
+
+  <div class="card" style="background-image: url(./Images/2.png);
+      background-size: cover; height: 110%;">
+    <div class="content-card">
+      <h2 class="title">Mr. Suvrat Joshi</h2>
+      <p class="copy" style="font-size: 0.9rem;">Suvrat Joshi is an Indian drama and television actor. He is widely known for his work in the Marathi sitcom, Dil Dosti Duniyadari and its sequel, Dil Dosti Dobara. He is an acting and music graduate from National School of Drama. Suvrat started off his career in theatre, before going into television. He also debuted as a singer in Dokyala Shot where he sang in Tamil. He hosted the dance reality show, Dance Maharashtra Dance. Suvrat produced and acted in his play Amar Photo Studio which rose to fame and received a lot of praise in the Marathi theatre community.</p>
+      <!-- <a class="new-tab-redirect-links"
+        href="https://youtu.be/lxa9V3BQvOc" target="_blank" rel="noopener noreferrer"><button class="btn">Watch
+          Now</button></a> -->
+    </div>
+  </div>
+
+  <div class="card" style="background-image: url(./Images/3.png);
+      background-size: cover; height: 110%;">
+    <div class="content-card">
+      <h2 class="title">Mr. Kingshuk Chakravarty</h2>
+      <p class="copy">Mr. Kingshuk is a film music director who predominantly works in Bollywood music. He has composed scores for a variety of movies including the 2020 movie “Suraj pe Mangal Bhari” and various trp topping TV shows. He has also headed Music Department for TV series “Bhram” and the 2019 released movie “The Zoya Factor”.</p>
+      <!-- <a
+        class="new-tab-redirect-links" href="https://youtu.be/abHQUJZZbKc" target="_blank"
+        rel="noopener noreferrer"><button class="btn">Watch Now</button></a> -->
+    </div>
+  </div>
+
+  <div class="card" style="background-image: url(./Images/4.png);
+      background-size: cover; height: 110%;">
+    <div class="content-card">
+      <h2 class="title">Mr. Rishabh Karwa</h2>
+      <p class="copy" style="font-size: 0.9rem;">Rishabh Karwa is the Managing Director & Co-Founder at GoMechanic. He has been featured in Forbes 30 under 30 (India & Asia). Rishabh is an extremely versatile person, a keen-hearted man, a football aficionado, an astronomy enthusiast and these are only a few of the incredible feathers in his hat. Gomechanic’s vision of being reliable and cost effective has won encouragement and recognition across the globe. It has extended its wings to Malaysia in 2021, giving the country its first ever "Car servicing and maintenance via App".</p>
+      <!-- <a class="new-tab-redirect-links" href="https://youtu.be/_TkeHnH4d9I"
+        target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a> -->
+    </div>
+  </div>
+  
+</span>
+ 	
+
+
+<!-- 
+   <div class="container-fluid " style="background-color: white;height: 400px;">
+      <div class="container-fluid" style="align-items: center;text-align: center;display: flex;justify-content: center;flex-direction: column;top: 20%;" >
+      <h1 class="comingsoon" style="color: black;" >COMING SOON</h1>
+      </div>
+     </div>  -->
+    <!-- <div class="hero-section"  >
+      <div class="hero-section-text">
+        <h1>COMING SOON</h1>
+        
+      </div>
+    </div> -->
+    
+    <!-- <div id="carousel">
+
+      <div class="hideLeft">
+       <img src="Images/speakers/4.png">
+     </div>
+
+     <div class="prevLeftSecond">
+       <img src="Images/speakers/3.png">
+     </div>
+
+     <div class="prev">
+       <img src="Images/speakers/1.png">
+     </div>
+
+     <div class="selected">
+       <img src="Images/speakers/2.png">
+     </div>
+
+     <div class="next">
+       <img src="Images/speakers/5.png">
+     </div>
+
+     <div class="nextRightSecond">
+       <img src="Images/speakers/4.png">
+     </div>
+
+     <div class="hideRight">
+       <img src="Images/speakers/1.png">
+     </div>
+     
+    </div> -->
+    <!-- <span class="center">
+            <a href="index.html#upcoming">
+              <button type="button" class="btn btn-know-more" style="position: absolute; z-index: 1000; width: max-content; left: 45%; top: 85%">Know More<i class="ml-2 fas fa-arrow-right"></i></button>
+            </a>
+            </span> -->
+     
+    
+    
+
+
+    <!----------------------------------------- 2019 --------------------------------------------------------->
+    
+    <div class="container-title " style="margin-top: 40px;">
+      <div class="speaker-title">
+       <div class="title-word" >TED<span style="color: red;">x</span> SPEAKERS 2019</div>
+       
+     </div>
+     </div>
+
+    <span class="page-content">
+      <div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832588213708259328/TB.jpg);
+      background-size: cover;">
+          <div class="content-card">
+              <h2 class="title">Teenasai Balamu</h2>
+              <p class="copy"></p>Teenasai Balamu, a singer and queer rights activist, fed up with being slotted into antiquated notions, decided to sing her way out of her misery.</p><a class="new-tab-redirect-links" href="https://youtu.be/iUwOCVNALtw" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+          </div>
+      </div>
+      <div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832591528815362068/MP.jpg);
+      background-size: cover;">
+          <div class="content-card">
+              <h2 class="title">Mithun Pangal</h2>
+              <p class="copy">Mithun Pangal, innovator, inventor, and CTO of custom technologies, unveils his invaluable technique of breaking down complex problems in the simplest way imaginable.</p><a class="new-tab-redirect-links" href="https://youtu.be/6Nbp0YumfYk" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+          </div>
+      </div>
+      <div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832595507104055326/NK.jpg);
+      background-size: cover;">
+          <div class="content-card">
+              <h2 class="title">Nilesh Kulkarni</h2>
+              <p class="copy">>Nilesh Kulkarni, shares invaluable life-lessons from his time as a cricketer and talks at length about a spectacular career opportunity in sports after retirement.</p><a class="new-tab-redirect-links" href="https://youtu.be/lxa9V3BQvOc" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+          </div>
+      </div>
+      <div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832596136841314335/NM.png);
+      background-size: cover;">
+          <div class="content-card">
+              <h2 class="title">Natasha Malpani</h2>
+              <p class="copy">Mrs. Natasha Malpani Oswal, the founder of Dice Media, struggled to conform to the societal norms and her parents’ expectations to finally pursue her passion, from the horse’s mouth.</p><a class="new-tab-redirect-links" href="https://youtu.be/abHQUJZZbKc" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+          </div>
+      </div>
+      <div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832598501875515412/MS.jpg);
+      background-size: cover;">
+        <div class="content-card">
+            <h2 class="title">Muki Sablania</h2>
+            <p class="copy">Muki Sablania, a hand-pan musician, a person who fashioned the hand-pan out of a gas cylinder because he couldn’t afford one.</p><a class="new-tab-redirect-links" href="https://youtu.be/_TkeHnH4d9I" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+        </div>
+    </div>
+    <div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832598826895540304/AK.jpg);
+    background-size: cover;">
+      <div class="content-card">
+          <h2 class="title">Ashvin Kumar</h2>
+          <p class="copy">Mr. Ashvin Kumar, a genius film-maker of Oscar-nominated film - Little Terrorist, encounters with the black reality of Kashmir form the basis of his thoughts.</p><a class="new-tab-redirect-links" href="https://youtu.be/meQwvBGR4xA" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+      </div>
+  </div>
+    </span>
+ 
+<!-- ------------------------------------------2018------------------------------------------------- -->
+  
+    <div class="container-title">
+      <div class="speaker-title">
+       <div class="title-word">TED<span style="color: red;">x</span> SPEAKERS 2018</div>
+       
+     </div>
+     </div>
+    
+
+    <span class="page-content">
+      
+      <div class="card " style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832607574553657414/KP.jpg);
+      background-size: cover;">
+          <div class="content-card">
+              <h2 class="title">Kurambapatti Kids</h2>
+              <p class="copy"></p>These thirteen-year-olds and their classmates designed a cost-effective and practically viable toilet set-up which they called "Safe Mode Pissing System".</p><a class="new-tab-redirect-links" href="https://youtu.be/tD_ZIgoybXI" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+          </div>
+      </div>
+      <div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832611463242842222/SJ.jpg);
+                                                    background-size: cover;">
+          <div class="content-card" >
+              <h2 class="title">Suraj Jagan</h2>
+              <p class="copy">Suraj Jagan, an Indian playback singer and frontman for rock bands like "Chakraview" & "Dream Out Loud", explains why is it important to love and accept yourself..</p><a class="new-tab-redirect-links" href="https://youtu.be/sQRj_j1G09k" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+          </div>
+      </div>
+      <div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832624650990256138/DW.jpg);
+      background-size: cover;">
+          <div class="content-card">
+              <h2 class="title">Diwakar Vaish</h2>
+              <p class="copy">Prof. Diwakar Vaish, an Indian roboticist, introduces the world’s first cheapest and smallest ventilator that maneuvers artificial intelligence and is as big as an adult human palm.</p><a class="new-tab-redirect-links" href="https://youtu.be/Y_92mDYfRGs" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+          </div>
+      </div>
+      <div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832622270538711060/AQ.png);
+      background-size: cover;">
+          <div class="content-card">
+              <h2 class="title">Altaf Qadri</h2>
+              <p class="copy">Altaf Qadri, a Diploma Engineer in Computers, tells a deeply personal story that impelled him into his profession and shows breathtaking images from his work.</p><a class="new-tab-redirect-links" href="https://youtu.be/rcDzeXheasY" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+          </div>
+      </div>
+      <div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832622955854430268/RS.jpg);
+      background-size: cover;">
+        <div class="content-card">
+            <h2 class="title">Richa Singh</h2>
+            <p class="copy">Richa Singh, the co-founder of Blogchatter, stresses the need to move on from looking out for instant gratification to using social media as a means of self-development and growth.</p><a class="new-tab-redirect-links" href="https://youtu.be/vjeqIaUWsvU" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+        </div>
+    </div>
+    <div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832623446189801492/SD.jpg);
+    background-size: cover;">
+      <div class="content-card">
+          <h2 class="title">Pt. Sharad Dandge</h2>
+          <p class="copy">Pt. Sharad Dandge, has incorporated the various cultures of India into sounds while he plays it on different Tablas around him.</p><a class="new-tab-redirect-links" href="https://youtu.be/y-6C9X21GtI" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+      </div>
+  </div>
+  <div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832623737169117234/NP.jpg);
+  background-size: cover;">
+    <div class="content-card">
+        <h2 class="title">Dr. Nandita Palshetkar</h2>
+        <p class="copy">Dr. Nandita Palshetkar reveals that egg freezing is the solution for the existence of ordeals revolving around the biological clock for women.</p><a class="new-tab-redirect-links" href="https://youtu.be/5KMlOdR8vLQ" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+    </div>
+</div>
+<div class="card" style="background-image: url(https://cdn.discordapp.com/attachments/832585419907399680/832623976970190868/GS.jpg);
+background-size: cover;">
+  <div class="content-card">
+      <h2 class="title">Giri Balasubramaniam</h2>
+      <p class="copy">Giri Balasubramaniam, the CEO of Greycaps, is a well know author and creator of several books and programs for schools across India.</p><a class="new-tab-redirect-links" href="https://youtu.be/kipg7vrQgic" target="_blank" rel="noopener noreferrer"><button class="btn">Watch Now</button></a>
+  </div>
+</div>
+    </span>
+
+ 
+    
+ <footer >
+  <div class="main-content">
+    <div class="left box">
+      <h2>HAVE QUERIES? ASK US</h2>
+      <div class="content">
+        
+        <p>Swapnil Mudaliar (Operations) - +91 88502 16315</p>
+        
+        
+      </div>
+    </div>
+
+    <div class="center box">
+      <h2>Address</h2>
+      <div class="content">
+        <div class="place">
+          <!-- <span class="fas fa-map-marker-alt"></span>
+          <span class="text">Sector 7, D Y Patil University, Nerul, Navi Mumbai 400706</span> -->
+          <table>
+          <tr>
+            <td rowspan=2> <span class="fas fa-map-marker-alt"></span></td>
+            <td><span class="text">Sector 7, D Y Patil University,</span></td>
+          </tr>
+          <tr>
+           <td><span class="text">Nerul, Navi Mumbai 400706</span></td>
+          </tr>
+          </table>
+        </div>
+        <div class="phone">
+        <table>
+          <tr>
+            <td rowspan=2> <span class="fas fa-phone-alt"></span></td>
+            <td><span class="text">IT Department,</span></td>
+          </tr>
+          <tr>
+           <td><span class="text">DY Patil University: +91 7276880013</span></td>
+          </tr>
+          </table>
+          <!-- <span class="fas fa-phone-alt"></span>
+          <span class="text">IT Department, DY Patil University: +91 7276880013</span> -->
+        </div>
+        <div class="email">
+          <table>
+          <tr>
+            <td rowspan=2> <span class="fas fa-envelope"></span></td>
+            <td><span class="text">info.tedx@dypatil.edu</span></td>
+          </tr>
+          <tr>
+           <td><span class="text">partnerships.tedx@dypatil.edu</span></td>
+          </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="right box">
+      <h2>SOCIAL MEDIA</h2>
+      <div class="content">
+        <div class="social">
+          <a href="https://www.facebook.com/268666783613875/"><span class="fab fa-facebook-f" style="color:white"></span></a>
+          <a href="https://twitter.com/TEDxDYPatil?s=08"><span class="fab fa-twitter" style="color:white"></span></a>
+          <a href="https://instagram.com/tedxdypatiluniversity?igshid=13hkv6yb1uaak"><span class="fab fa-instagram" style="color:white"></span></a>
+          <a href="https://www.youtube.com/results?search_query=tedx+dy+patil+university"><span class="fab fa-youtube" style="color:white"></span></a>
+          <a href="https://www.linkedin.com/company/tedxdypatiluniversity"><span class="fab fa-linkedin-in" style="color:white"></span></a>
+          <a href="https://discord.gg/CfMhHFkJ7Z"><span class="fab fa-discord"  style="color:white"></span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="bottom">
+    <center>
+      <span class="credit">This independent TEDx event is operated under a license from TED. | </span>
+      <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+    </center>
+  </div>
+ </footer>
+
+ 	<script type="text/javascript">
+	$(document).ready(function(){
+  $(".toggle-button").click(function(){
+    $(".navbar-links").slideToggle("slow");
+  });
+});
+
+
+ </script>
+<script>
+  function moveToSelected(element) {
+
+if (element == "next") {
+  var selected = $(".selected").next();
+} else if (element == "prev") {
+  var selected = $(".selected").prev();
+} else {
+  var selected = element;
+}
+
+var next = $(selected).next();
+var prev = $(selected).prev();
+var prevSecond = $(prev).prev();
+var nextSecond = $(next).next();
+
+$(selected).removeClass().addClass("selected");
+
+$(prev).removeClass().addClass("prev");
+$(next).removeClass().addClass("next");
+
+$(nextSecond).removeClass().addClass("nextRightSecond");
+$(prevSecond).removeClass().addClass("prevLeftSecond");
+
+$(nextSecond).nextAll().removeClass().addClass('hideRight');
+$(prevSecond).prevAll().removeClass().addClass('hideLeft');
+
+}
+
+
+$(document).keydown(function(e) {
+  switch(e.which) {
+      case 37: // left
+      moveToSelected('prev');
+      break;
+
+      case 39: // right
+      moveToSelected('next');
+      break;
+
+      default: return;
+  }
+  e.preventDefault();
+});
+
+$('#carousel div').click(function() {
+moveToSelected($(this));
+});
+
+$('#prev').click(function() {
+moveToSelected('prev');
+});
+
+$('#next').click(function() {
+moveToSelected('next');
+});
+
+</script>
