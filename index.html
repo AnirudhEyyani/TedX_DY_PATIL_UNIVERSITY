@@ -91,6 +91,9 @@ body{
       .side-element-r {
         display: none;
       }
+      .text1-ojsf{
+        margin: -250px;
+      }
 
     }
 
@@ -125,7 +128,7 @@ body{
 <header>
    <nav class="navbar" style="position: sticky;" >
         <div class="brand-title">
-        	<img src="Images/TEDxDYPatilUniversityop.png" class="responsive logo"></div>
+        	<img src="Images/TEDxDYPatilUniversityop-removebg-preview.png" class="responsive logo"></div>
         <a href="#" class="toggle-button" >
           <span class="bar"></span>
           <span class="bar"></span>
@@ -171,11 +174,41 @@ body{
   </video></div>
   <!-- <canvas id="myCanvas" ></canvas> -->
 
+ <!-- Theme Space -->
+<div class="ojsf">
+  <div class="row">
+  <div class="col-12 col-sm-7 mt-3">
+    <div class="flex1-ojsf">
+      
+        <div class="text1-ojsf">
+          <h2 class="speaker" style="color: white; text-align: center;" class="display-2" ><u style="color: red;"><span class="text-speaker" style="color:white; text-shadow: -3px -3px 10px rgba(255,255,255,0.4);">Our Journey So Far</span></u></h2>
+          <div class="theme-desc-ojsf">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quibusdam sequi, tempore exercitationem commodi dolor eveniet nulla distinctio magni dolores nobis non fugit cumque repellendus at a sapiente! Ipsa ratione ea officia aliquid optio ut, harum fugit rerum quidem molestiae laboriosam vel nulla. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit quibusdam sequi, tempore exercitationem commodi dolor eveniet nulla distinctio magni dolores nobis non fugit cumque repellendus at a sapiente! Ipsa ratione ea officia aliquid optio ut, harum fugit rerum quidem molestiae laboriosam vel nulla.
+          <a href="/theme.html"><a class="btn btn-dark btn-book1" style="float: right; color: red; border: 0.5px solid red; margin-top: 50px;">Know More</a></a>
+        </div>
+      </div>
+  </div>
+  
+  </div>
+  <div class="col-sm-2 mr-3 ">
+    <div class="side-element-r">
+      <img src="Tedx logos/tedx_neon_remove_bg.png
+      " alt="piece3">
+    </div>
+  </div>
+    <!-- <h1 class="speaker theme-title1">THEME FOR 2022</h1> -->
+  
+   
+  
+  
+  
+  </div>
+  </div>
+
 
 <!-- Theme Space -->
 <div class="pbp " id="pbpdir">
 <div class="row">
-<div class="col-12 col-sm-7 mt-3">
+<!-- <div class="col-12 col-sm-2 mt-3">
   <div class="flex1">
     
       <div class="text1">
@@ -184,13 +217,23 @@ body{
         <a href="/theme.html"><button type="button" class="btn btn-dark btn-book1">Know More</button></a>
       </div>
     </div>
-</div>
+    <div class="side-element-r">
+      <img src="Images/theme_image2.jpeg" alt="piece3" width="500px" height="400px">
+    </div>
 
 </div>
-<div class="col-sm-2 mr-3 ">
-  <div class="side-element-r">
-    <img src="Images/jigsaw transparent.png" alt="piece3" width="350px" height="350px">
+
+</div> -->
+<div class="col-lg-12">
+  <div class="text1" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <h2 class="speaker" style="color: white;text-align: center;" class="display-2" ><u style="color: red;"><span class="text-speaker" style="color:black; text-shadow: -3px -3px 10px rgba(255,255,255,0.4);">Piece By Piece</span></u></h2>
+    <div class="theme-desc" style="text-align: center;">A single brick itself is of no great use but when several bricks are held together, one by one, it can be transformed into massive structures. The theme of our event revolves around the same. Just like the tiny puzzle blocks form a big picture, life is a puzzle too, made up of numerous puzzle blocks in different stages of our lives.<br><br>
+    <a href="/theme.html"><button type="button" class="btn btn-dark btn-book1" style="text-align: center;">Know More</button></a>
   </div>
+</div>
+  <!-- <div class="side-element-r">
+    <img src="Images/jigsaw transparent.png" alt="piece3" width="350px" height="350px">
+  </div> -->
 </div>
   <!-- <h1 class="speaker theme-title1">THEME FOR 2022</h1> -->
 
@@ -211,9 +254,19 @@ body{
 </script>
 <!-- Style for Theme -->
 <style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
   .pbp {
-    height: 70vh;
+    /* height: 70vh; */
     background-color: rgb(255, 255, 255);
+    background-attachment: fixed;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+  }
+  .ojsf {
+    /* height: 70vh; */
+    background-color: rgba(0, 0, 0, 1);
     background-attachment: fixed;
     perspective: 1px;
     transform-style: preserve-3d;
@@ -226,7 +279,7 @@ body{
     display: flex;
     align-items: center;
     text-align: center;
-    font-family:'Helvetica', sans-serif;
+    /* font-family:'Helvetica', sans-serif; */
     font-weight: bold; 
     margin-top: auto;
     position: relative;
@@ -236,6 +289,14 @@ body{
 
   }
   .flex1 {
+    display: flex;
+    position: relative;
+  
+    justify-content: space-around;
+    flex-direction: row;
+    
+  }
+  .flex1-ojsf{
     display: flex;
     position: relative;
   
@@ -253,7 +314,7 @@ body{
   } */
 
   .side-element-r {
-    padding-top: 100px;
+    /* padding-top: 100px; */
     background-color: rgba(0,0,0,0);
     height: 100%;
     width: 30%;
@@ -263,12 +324,29 @@ body{
   .text1 {
     background-color: white;
     height: max-content;
-    width: 90%;
-    padding-top: 9%;
+    width: 100%;
+    /* padding-top: 9%; */
+    padding: 5%;
     transform-style: inherit;
     position: relative;
   }
-
+  .text1-ojsf {
+    background-color: black;
+    height: max-content;
+    width: 100%;
+    /* padding-top: 9%; */
+    padding: 5%;
+    transform-style: inherit;
+    position: relative;
+  }
+  @media only screen and (max-width: 426px){
+    .pbp{
+      height: 100%;
+    }
+    .ojsf{
+      height: 100vh;
+    }
+  }
  
 
   .theme-title {
@@ -291,16 +369,139 @@ body{
   .card-text{
     font-size: 1rem;
   }
-  .speaker{
-    font-size: 4rem;
+  .text-speaker{
+    font-size: 3rem;
+    font-family: 'Montserrat', sans-serif;
   }
+ .scroll{
+    margin: 4px, 4px;
+    padding: 4px;
+    position: relative;
+    background-color: none;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    will-change: transform;
+    user-select: none;
+	  cursor: pointer;
+ }
+ .scroll.active {
+	background: rgba(255, 255, 255, 0.3);
+	cursor: grabbing;
+	cursor: -webkit-grabbing;
+	/*transform: scale(0.99);*/
+  }
+ .item{
+  display: inline-block;
+	background: rgba(0, 0, 0, 0.75);
+	height: 350px;
+	width: 350px;
+	margin: 2px 5px;
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0px 0px 6px -2px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: inset 0px 0px 6px -2px rgba(0, 0, 0, 0.75);
+	box-shadow: inset 0px 0px 6px -2px rgba(0, 0, 0, 0.75);
+	transition: 0.2s ease-in-out 0s;
+	-webkit-transition: 0.2s ease-in-out 0s;
+	-moz-transition: 0.2s ease-in-out 0s;
+	-o-transition: 0.2s ease-in-out 0s;
+	-ms-transition: 0.2s ease-in-out 0s;
+ }
+ .item img{
+  height: 350px;
+  width: 350px;
+ }
+ .middle, .middle2, .middle3, .middle4{
+  opacity: 0;
+  transition: .5s ease;
+ }
+ .overlay-text{
+  position: absolute;
+  bottom: 70%;
+  left: 120px;
+  font-size: large;
+  font-weight: bold;
+ }
+ .overlay-text-desc{
+  position: absolute;
+  bottom: 40%;
+  left: 40px;
+  text-align: center;
+ }
+ .item1:hover .middle {
+  opacity: 1;
+}
+ .item1:hover img{
+  opacity: 0.3;
+ }
+
+ .overlay-text2{
+  position: absolute;
+  bottom: 70%;
+  left: 480px;
+  font-size: large;
+  font-weight: bold;
+ }
+ .overlay-text-desc2{
+  position: absolute;
+  bottom: 40%;
+  left: 410px;
+  text-align: center;
+ }
+ .item2:hover .middle2 {
+  opacity: 1;
+}
+ .item2:hover img{
+  opacity: 0.3;
+ }
+
+ .overlay-text3{
+  position: absolute;
+  bottom: 70%;
+  left: 850px;
+  font-size: large;
+  font-weight: bold;
+ }
+ .overlay-text-desc3{
+  position: absolute;
+  bottom: 40%;
+  left: 780px;
+  text-align: center;
+ }
+ .item3:hover .middle3 {
+  opacity: 1;
+}
+ .item3:hover img{
+  opacity: 0.3;
+ }
+ .overlay-text4{
+  position: absolute;
+  bottom: 70%;
+  left: 1200px;
+  font-size: large;
+  font-weight: bold;
+ }
+ .overlay-text-desc4{
+  position: absolute;
+  bottom: 40%;
+  left: 1130px;
+  text-align: center;
+ }
+ .item4:hover .middle4{
+  opacity: 1;
+}
+ .item4:hover img{
+  opacity: 0.3;
+ }
+
 </style>
 
    
-<h2 class="speaker" id="speaker22" style="color: white;text-align: center;font-family:'Helvetica', sans-serif;font-weight: bold; margin-top: 5vh;" class="display-2" ><span style="color:white;font-weight: bold;font-family:'Helvetica', sans-serif;">SPEAKERS FOR 2022</span></h2>
+<h2 class="speaker" id="speaker22" style="color: white;text-align: center;margin-top: 5vh;" class="display-2" ><u style="color: red;"><span class="text-speaker" style="color:white; text-shadow: -3px -3px 10px rgba(255,255,255,0.4);">Upcoming Speakers</span></u></h2>
 
 
-	<div class="row justify-content-center" style="margin-top: 2%; margin-left: 1.5%;" >
+	<!-- <div class="row justify-content-center" style="margin-top: 2%; margin-left: 1.5%;" >
 		<div class="col-12 col-sm-5 col-md-5 col-lg-4 mb-5">
 				<div class="card" style="height: 680px;">
 					<div class="card-body">
@@ -312,17 +513,7 @@ body{
 				</div>
 			</div>
 		</div>
-		<!-- <div class="col-12 col-sm-5 col-md-5 col-lg-4 mb-5">
-				<div class="card" style="height: 680px;">
-					<div class="card-body">
-					  <img class="card-img-top mb-4" src="Images/1.png" alt="Card image cap">
-					<div class="card-title" >
-            <center><p style="color: white;font-size: 1.2rem;font-weight: 600;"><nobr>Dr. Om Shrivastav</nobr></p></center></div>
-					<center>
-					<p class="card-text"  style="color: white;font-size: 0.9rem;font-weight: 500;">Dr. Om Shrivastav is a well-known infectious disease specialist. Dr. Om Shrivastav has been working as an Infectious Disease Physician for the past 17 years, gaining proficiency and sparse skills in his field. He earned his MBBS and MD in India and undertook further training in Sydney, Australia. Dr. Om is a multifaceted individual, he is a member of several review committees, a passionate teacher, an internationally invited orator and an exceptional author.</p></center>
-				</div>
-			</div>
-		</div> -->
+
 		<div class="col-12 col-sm-5 col-md-5 col-lg-4 mb-5">
 				<div class="card" style="height: 680px;">
 					<div class="card-body">
@@ -356,7 +547,50 @@ body{
 				</div>
 			</div>
 		</div>
-		
+		 -->
+								    	<!-- <div class="timeline-date">26/07/2022</div>
+										<div class="timeline-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit deserunt numquam quos nisi maxime, esse modi necessitatibus vero quo reprehenderit obcaecati voluptate accusamus corrupti maiores quidem sed, iste ab laborum?</div> -->
+										<div class="scroll">
+											<div class="item item1"><img src="Images/puneet.jpeg">
+                        <div class="middle">
+                          <div class="overlay-text">Mr. Puneet Bekal</div>
+                          <div class="overlay-text-desc">Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. <br>Ratione inventore laboriosam quia quod <br>molestias ipsum!</div>
+                        </div>
+                      </div>
+                      <div class="item item2"><img src="Images/puneet.jpeg">
+                        <div class="middle2">
+                          <div class="overlay-text2">Mr. Puneet Bekal</div>
+                          <div class="overlay-text-desc2">Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. <br>Ratione inventore laboriosam quia quod <br>molestias ipsum!</div>
+                        </div>
+                      </div>
+                      <div class="item item3"><img src="Images/puneet.jpeg">
+                        <div class="middle3">
+                          <div class="overlay-text3">Mr. Puneet Bekal</div>
+                          <div class="overlay-text-desc3">Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. <br>Ratione inventore laboriosam quia quod <br>molestias ipsum!</div>
+                        </div>
+                      </div>
+                      <div class="item item4"><img src="Images/puneet.jpeg">
+                        <div class="middle4">
+                          <div class="overlay-text4">Mr. Puneet Bekal</div>
+                          <div class="overlay-text-desc4">Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. <br>Ratione inventore laboriosam quia quod <br>molestias ipsum!</div>
+                        </div>
+                      </div>
+                     
+                      <!-- <div class="item item5"><img src="Images/speakers/3.png"></div>
+                      <div class="item item6"><img src="Images/speakers/3.png"></div>
+
+                      <div class="item item7"><img src="Images/speakers/3.png"></div>
+
+                      <div class="item item8"><img src="Images/speakers/3.png"></div> -->
+
+											<!-- <div class="item item4"></div>
+											<div class="item item5"></div>
+											<div class="item item6"></div>
+											<div class="item item7"></div>
+											<div class="item item8"></div>
+											<div class="item item9"></div>
+											<div class="item item10"></div> -->
+										  </div>
 
 
 		<!-- <div class="col-xl-3 col-lg-6 col-md-12 col-sm-12">
@@ -391,7 +625,7 @@ body{
       <h2>HAVE QUERIES? ASK US</h2>
       <div class="content">
         
-        <p>Vraj Anandpara (Organizer) - +91 9429159819</p>
+        <p>Vraj Anandpara (Operators) - +91 9429159819</p>
         
       </div>
     </div>
@@ -458,7 +692,7 @@ body{
   <div class="bottom">
     <center>
       <span class="credit">This independent TEDx event is operated under a license from TED. | </span>
-      <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+      <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
     </center>
   </div>
  </footer>
