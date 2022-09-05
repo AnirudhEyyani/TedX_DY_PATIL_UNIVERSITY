@@ -140,7 +140,7 @@ body{
             <li><a class="nav" href="index.html">HOME</a></li>
             <li><a class="nav"  href="yourweeklycontemplation.html">BLOG</a></li>
             <li><a class="nav"  href="aboutus.html">ABOUT US</a></li>
-            <li><a class="nav" href="team.html">THE TEAM</a></li>
+            <!-- <li><a class="nav" href="team.html">THE TEAM</a></li> -->
             <li><a class="nav" href="speakers.html">SPEAKERS</a></li>
             <!-- <li><a class="nav" href="sponsors.html">SPONSORS</a></li> -->
             <li><a class="nav" href="theme.html">THEMES</a></li>
@@ -401,7 +401,7 @@ body{
   height: 350px;
   width: 350px;
  }
- .middle, .middle2, .middle3, .middle4{
+ .middle, .middle2, .middle3, .middle4, .middle5{
   opacity: 0;
   transition: .5s ease;
  }
@@ -483,6 +483,25 @@ body{
  .item4:hover img{
   opacity: 0.3;
  }
+ .overlay-text5{
+  position: absolute;
+  bottom: 70%;
+  left: 1575px;
+  font-size: large;
+  font-weight: bold;
+ }
+ .overlay-text-desc5{
+  position: absolute;
+  bottom: 40%;
+  left: 1500px;
+  text-align: center;
+ }
+ .item5:hover .middle5{
+  opacity: 1;
+}
+ .item5:hover img{
+  opacity: 0.3;
+ }
  .read-more-div{
   color: white;
  }
@@ -503,6 +522,201 @@ body{
   height: 200px;
   position: absolute;
  }
+ /* Blogs */
+
+.bcardhero-section{
+  align-items: flex-start;
+  background-color:black;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: 5% 0%;
+
+}
+
+.bcard-grid{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  
+  grid-column-gap: 4rem;
+  grid-row-gap: var(--spacing-l);
+  /* max-width: var(--width-container); */
+  width: 70%;
+ 
+}
+
+@media(min-width: 700px){
+  .bcard-grid{
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+@media(min-width: 900px){
+  .bcard-grid{
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media(min-width: 1400px){
+  .bcard-grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.bcard{
+  list-style: none;
+  position: relative;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);;
+  /* align-items: center; */
+  margin-bottom: 50px;
+  border-radius: 10px;  
+}
+
+.bcard:before{
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+  background-color: black ;
+  border-radius: 10px;  
+
+  
+}
+
+.bcard__background{
+  
+  background-color: #0a0a0a;
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-m);
+  bottom: 0;
+  /* filter: brightness(1.0) saturate(1.0) contrast(1); */
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 10px;  
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: 
+    filter 200ms linear,
+    transform 200ms linear;
+  
+}
+
+.bcard:hover .bcard__background{
+  transform: scale(1.05) translateZ(0);
+  border-radius: var(--spacing-m);
+  
+}
+
+
+.bcard__content{
+  left: 0;
+  padding: var(--spacing-l);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+  
+}
+
+.bcard__category{
+  /* color: var(--text-light); */
+  font-size: 1rem;
+  margin-bottom: var(--spacing-s);
+  /* text-transform: uppercase; */
+  color: white;
+  
+}
+
+.bcard__heading{
+  color: rgba(255,255,255,0.9);
+  font-size: 1.9rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);;
+/*   word-spacing: 100vw; */
+}
+.bcard__heading1{
+  color: rgba(255,255,255,0.9);
+  font-size: 1.6rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);;
+/*   word-spacing: 100vw; */
+}
+
+.bcard__heading2{
+  color: rgba(255,255,255,0.9);
+  font-size: 1.4rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);;
+/*   word-spacing: 100vw; */
+}
+
+.bcard__heading3{
+  color: rgba(255,255,255,0.9);
+  font-size: 1.2rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);;
+}
+
+.bcard__heading4{
+  color: rgba(255,255,255,0.9);
+  font-size: 1.0rem;
+  text-shadow: 2px 2px 20px rgba(0,0,0,0.2);
+  line-height: 1.4;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);;
+}
+/* BUTTON CSS STARTS */
+
+.custom-btn {
+  
+  padding: 10px 25px;
+ 
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+
+}
+/**** BTN No. 1 ****/
+.btn-1 {
+  border-radius: 7px;
+  background: #000;
+
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+.btn-1:hover {
+  background: #000;
+  color: red;
+  border: 1px solid white;
+}
+.btn-1:active {
+  top: 2px;
+}
+
 </style>
 
    
@@ -532,9 +746,15 @@ body{
                           <div class="overlay-text-desc4">Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. <br>Ratione inventore laboriosam quia quod <br>molestias ipsum!</div>
                         </div>
                       </div>
+                      <div class="item item5"><img src="Images/nitin_malik.png">
+                        <div class="middle5">
+                          <div class="overlay-text5">Mr. Nitin Malik</div>
+                          <div class="overlay-text-desc5">Lorem ipsum dolor sit amet consectetur,<br> adipisicing elit. <br>Ratione inventore laboriosam quia quod <br>molestias ipsum!</div>
+                        </div>
+                      </div>
                      
 										  </div>
-            <section style="width: 100%; height: 100%; background: white; overflow-y: hidden; margin-bottom: 100px;background: black;">
+            <!-- <section style="width: 100%; height: 100%; background: white; overflow-y: hidden; margin-bottom: 100px;background: black;">
               <h2 class="speaker" id="speaker22" style="color: white;text-align: center;margin-top: 5vh;" class="display-2" ><u style="color: red;"><span class="text-speaker" style="color:white; text-shadow: -3px -3px 10px rgba(255,255,255,0.4);">Blogs</span></u></h2>
               <div class="blogs-box" style="display: flex; justify-content: center; align-items: center; flex-direction: column; overflow-y: scroll; overflow-x: hidden; margin-bottom: 5%;">
                 <div class="blog-img" style="width: 80%; height: 300px; overflow-y: hidden;">
@@ -555,6 +775,72 @@ body{
               </div>
               <div class="read-more-div" style="margin: 20px; text-align: center;"><a style="border: 1px solid red; padding: 15px; border-radius: 10px;">READ MORE</a></div>
               
+            </section> -->
+            <h2 class="speaker" id="speaker22" style="color: white;text-align: center;margin-top: 5vh;" class="display-2" ><u style="color: red;"><span class="text-speaker" style="color:white; text-shadow: -3px -3px 10px rgba(255,255,255,0.4);">Blogs</span></u></h2>
+
+            <section class="bcardhero-section" style="display: flex; justify-content: center; align-items:center; flex-direction: column;">
+
+              <div class="bcard-grid">
+          
+                
+                <!-- Apoorva Blog -->
+                <a class="bcard" href="./articles/dysfunctional.html">
+                  <div class="bcard__background" style="background-image: url(Images/card\ week\ 14.png)"></div>
+                  <div class="bcard__content">
+                    <p class=" bcard__category">Dec 09 2021</p>
+          <p class=" bcard__category">Apoorva Edla</p>
+          <h3 class="bcard__heading4">The Narrative of</h3><h3 class="bcard__heading2">Dysfunctional Families</h3>
+      
+          <br><br>
+          <button class="custom-btn btn-1">Read More</button>
+          <br>
+                
+                  </div>
+                </a>
+                <!-- Apoorva Blog -->
+                <a class="bcard" href="articles/fermiparadox.html">
+                  <div class="bcard__background" style="background-image: url(Images/card\ week\ 13.png)"></div>
+                  <div class="bcard__content">
+                    <p class=" bcard__category">Nov 16 2021</p>
+          <p class=" bcard__category">Aarya Shelar</p>
+          <h3 class="bcard__heading">The Fermi Paradox</h3>
+      
+          <br><br><br>
+          <button class="custom-btn btn-1">Read More</button>
+          <br>
+                
+                  </div>
+                </a>
+                <!-- Apoorva Blog -->
+                <a class="bcard" href="articles/nihilism.html">
+                  <div class="bcard__background" style="background-image: url(Images/card\ week\ 12.png)"></div>
+                  <div class="bcard__content">
+                    <p class=" bcard__category">Oct 31 2021</p>
+          <p class=" bcard__category">Pavithra Holla</p>
+          <h3 class="bcard__heading2">A Case for Nihilism</h3>
+      
+          <br><br><br><br>
+          <button class="custom-btn btn-1">Read More</button>
+          <br>
+                
+                  </div>
+                </a>
+                <!-- Apoorva Blog -->
+                <!-- <a class="bcard" href="articles/misinformationage">
+                  <div class="bcard__background" style="background-image: url(Images/card\ week\ 11.jpg)"></div>
+                  <div class="bcard__content">
+                    <p class=" bcard__category">Oct 24 2021</p>
+                    <p class=" bcard__category">Rohan Mehere</p>
+                    <h3 class="bcard__heading2">The Misinformation Age</h3>
+                
+                    <br><br><br>
+                    <button class="custom-btn btn-1">Read More</button>
+                    <br>
+                
+                  </div>
+                </a> -->
+              </div>
+              <div class="read-more-div" style="margin: 20px; text-align: center;"><a style="border: 1px solid red; padding: 15px; border-radius: 10px;">READ MORE</a></div>
             </section>
 
 
