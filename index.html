@@ -19,9 +19,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">  -->
 <link rel="stylesheet" href="SABKACSS.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> -->
 
 <script src="pbp.js" type="module" async></script>
 
@@ -31,11 +31,12 @@ html {
   overflow-x: hidden;
 }
 body{
-  max-width: 100%;
+  /* max-width: 100%; */
   margin: 0;
   
 }
 .header-landing{
+  font-family: 'Montserrat', sans-serif;
   font-size: 1vw;
   animation: big-font 1.5s linear forwards;
 }
@@ -81,10 +82,6 @@ body{
     }
 
     @media only screen and (max-width: 850px) {
-      .hero-video{
-        height: 100vh;
-      }
-      
       .card {
         margin-left: 7%;
         margin-top: 20%;
@@ -153,7 +150,7 @@ body{
           <span class="bar"></span>
           <span class="bar"></span>
         </a>
-        <div class="navbar-links" >
+        <div class="navbar-links" style="  font-family: 'Montserrat', sans-serif;">
           <ul class="menu" >
             <li><a class="nav" href="index.html">HOME</a></li>
             <li><a class="nav"  href="yourweeklycontemplation.html">BLOG</a></li>
@@ -176,7 +173,7 @@ body{
     </div>
       
     
-      <video class="hero-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" style="width: 100%; height: 100%;">
+      <video class="hero-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
     <source src="tedx_vid_01.mp4" type="video/mp4" >
   </video></div>
 
@@ -232,7 +229,14 @@ body{
 <!-- Style for Theme -->
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+  .hero-video{
+    width: 100%;
+    height: 100%;
+  }
   @media only screen and (max-width: 850px) {
+    .hero-video{
+        height: 100vh;
+      }
     h2 .text-speaker{
       font-size: 30px;
     }
