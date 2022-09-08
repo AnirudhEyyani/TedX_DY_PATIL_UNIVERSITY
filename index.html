@@ -258,7 +258,7 @@ body{
 <div class="row">
 <div class="col-lg-12">
   <div class="text1" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-    <h2 class="speaker" style="color: white;text-align: center;" class="display-2" ><u style="color: red;"><span class="text-speaker" style="color:black; text-shadow: -3px -3px 10px rgba(255,255,255,0.4);">Piece By Piece</span></u></h2>
+    <h2 class="speaker" style="color: white;text-align: center;" class="display-2" ><span class="text-speaker" style="color:black; text-shadow: -3px -3px 10px rgba(255,255,255,0.4);">Piece By Piece</span></h2>
     <div class="theme-desc" style="text-align: center;">A single brick itself is of no great use but when several bricks are held together, one by one, it can be transformed into massive structures. The theme of our event revolves around the same. Just like the tiny puzzle blocks form a big picture, life is a puzzle too, made up of numerous puzzle blocks in different stages of our lives.
       <br><br>
     <a href="/theme.html"><button type="button" class="btn btn-dark btn-book1" style="text-align: center;">Know More</button></a>
@@ -456,6 +456,81 @@ body{
   opacity: 0;
   transition: .5s ease;
  }
+ .overlay-text-over{
+  position: absolute;
+  bottom: 20%;
+  left: 100px;
+  font-size: large;
+  font-weight: bold;
+ }
+ .content-overlay{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  width: 360px;
+  height: 100px;
+  bottom: 0%;
+  left: 10px;
+ }
+ .overlay-text-over1{
+  position: absolute;
+  bottom: 20%;
+  left: 100px;
+  font-size: large;
+  font-weight: bold;
+ }
+ .content-overlay1{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  width: 360px;
+  height: 100px;
+  bottom: 0%;
+  left: 372px;
+ }
+ .overlay-text-over2{
+  position: absolute;
+  bottom: 20%;
+  left: 100px;
+  font-size: large;
+  font-weight: bold;
+ }
+ .content-overlay2{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  width: 360px;
+  height: 100px;
+  bottom: 0%;
+  left: 730px;
+ }
+ .overlay-text-over3{
+  position: absolute;
+  bottom: 20%;
+  left: 100px;
+  font-size: large;
+  font-weight: bold;
+ }
+ .content-overlay3{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  width: 360px;
+  height: 100px;
+  bottom: 0%;
+  left: 1100px;
+ }
+ .overlay-text-over4{
+  position: absolute;
+  bottom: 20%;
+  left: 120px;
+  font-size: large;
+  font-weight: bold;
+ }
+ .content-overlay4{
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  width: 350px;
+  height: 100px;
+  bottom: 0%;
+  left: 1450px;
+ }
  .overlay-text{
   position: absolute;
   bottom: 70%;
@@ -465,10 +540,10 @@ body{
  }
  .overlay-text-desc{
   position: absolute;
-  bottom: 40%;
+  bottom: 50%;
   left: 40px;
-  bottom: 120px;
-  text-align: center;
+  /* bottom: 120px; */
+  text-align: left;
  }
  .item1:hover .middle {
   opacity: 1;
@@ -486,9 +561,9 @@ body{
  }
  .overlay-text-desc2{
   position: absolute;
-  bottom: 20%;
+  bottom: 40%;
   left: 390px;
-  text-align: center;
+  text-align: left;
  }
  .item2:hover .middle2 {
   opacity: 1;
@@ -506,9 +581,9 @@ body{
  }
  .overlay-text-desc3{
   position: absolute;
-  bottom: 20%;
+  bottom: 40%;
   left: 750px;
-  text-align: center;
+  text-align: left;
  }
  .item3:hover .middle3 {
   opacity: 1;
@@ -525,9 +600,9 @@ body{
  }
  .overlay-text-desc4{
   position: absolute;
-  bottom: 35%;
+  bottom: 50%;
   left: 1140px;
-  text-align: center;
+  text-align: left;
  }
  .item4:hover .middle4{
   opacity: 1;
@@ -544,9 +619,9 @@ body{
  }
  .overlay-text-desc5{
   position: absolute;
-  bottom: 15%;
+  bottom: 40%;
   left: 1520px;
-  text-align: center;
+  text-align: left;
  }
  .item5:hover .middle5{
   opacity: 1;
@@ -768,11 +843,14 @@ body{
 </style>
 
    
-<h2 class="speaker" id="speaker22" style="color: white;text-align: center;margin-top: 5vh;" class="display-2" ><u style="color: red;"><span class="text-speaker" style="color:white; text-shadow: -3px -3px 10px rgba(255,255,255,0.4);">Upcoming Speakers</span></u></h2>
+<h2 class="speaker" id="speaker22" style="color: white;text-align: center;margin-top: 5vh;" class="display-2" ><span class="text-speaker" style="color:white; text-shadow: -3px -3px 10px rgba(255,255,255,0.4);">Upcoming Speakers</span></h2>
 										<div class="scroll">
 											<div class="item item1"><img src="Images/puneet.jpeg">
+                      <div class="content-overlay">
+                      <div class="overlay-text-over">Mr. Puneeth Bekal</div>
+                      </div>
                         <div class="middle">
-                          <div class="overlay-text">Mr. Puneeth Bekal</div>
+                          <!-- <div class="overlay-text">Mr. Puneeth Bekal</div> -->
                           <div class="overlay-text-desc">
                             <li>Marketing Director at Mastercard</li>
                             <li>Former General Manager<br> Marketing at Godrej </li>
@@ -782,8 +860,11 @@ body{
                         </div>
                       </div>
                       <div class="item item2"><img src="Images/tarun_kaura.jpeg">
+                        <div class="content-overlay1">
+                          <div class="overlay-text-over1">Mr. Tarun Kaura</div>
+                          </div>
                         <div class="middle2">
-                          <div class="overlay-text2">Mr. Tarun Kaura</div>
+                          <!-- <div class="overlay-text2">Mr. Tarun Kaura</div> -->
                           <div class="overlay-text-desc2">
                             <li>Partner of Cyber Risk Services at Deloitte</li>
                             <!-- <li>Former Director of Product Management <br>for Asia Pacific and Japan at Symantec</li>
@@ -798,8 +879,11 @@ body{
                         </div>
                       </div>
                       <div class="item item3"><img src="Images/2.png">
+                        <div class="content-overlay2">
+                          <div class="overlay-text-over2">Mr. Suvrat Joshi</div>
+                          </div>
                         <div class="middle3">
-                          <div class="overlay-text3">Mr. Suvrat Joshi</div>
+                          <!-- <div class="overlay-text3">Mr. Suvrat Joshi</div> -->
                           <div class="overlay-text-desc3">
                             <li>Acting and music graduate from <br>National School of Drama</li>
                             <!-- <li>Won the Nirmal Award for best <br>actor in Purushottam Karandak</li> -->
@@ -809,8 +893,11 @@ body{
                         </div>
                       </div>
                       <div class="item item4"><img src="Images/4.png">
+                        <div class="content-overlay3">
+                          <div class="overlay-text-over3">Mr. Rishabh Karwa</div>
+                          </div>
                         <div class="middle4">
-                          <div class="overlay-text4">Mr. Rishabh Karwa</div>
+                          <!-- <div class="overlay-text4">Mr. Rishabh Karwa</div> -->
                           <div class="overlay-text-desc4">
                             <li>Co-founder at GoMechanic</li>
                             <li> Former Executive Engineer at <br>Lodha Group</li>
@@ -820,8 +907,11 @@ body{
                         </div>
                       </div>
                       <div class="item item5"><img src="Images/nitin_malik.png">
+                        <div class="content-overlay4">
+                          <div class="overlay-text-over4">Mr. Nitin Malik</div>
+                          </div>
                         <div class="middle5">
-                          <div class="overlay-text5">Mr. Nitin Malik</div>
+                          <!-- <div class="overlay-text5">Mr. Nitin Malik</div> -->
                           <div class="overlay-text-desc5">
                             <li>Lead Vocalist & Co-founder <br>of Parikrama</li>
                             <li>Established One of the first<br>English Indian Rock Bands </li>
@@ -854,7 +944,7 @@ body{
               <div class="read-more-div" style="margin: 20px; text-align: center;"><a style="border: 1px solid red; padding: 15px; border-radius: 10px;">READ MORE</a></div>
               
             </section> -->
-            <h2 class="speaker" id="speaker22" style="color: white;text-align: center;margin-top: 5vh;" class="display-2" ><u style="color: red;"><span class="text-speaker" style="color:white; text-shadow: -3px -3px 10px rgba(255,255,255,0.4);">Blogs</span></u></h2>
+            <h2 class="speaker" id="speaker22" style="color: white;text-align: center;margin-top: 5vh;" class="display-2" ><span class="text-speaker" style="color:white; text-shadow: -3px -3px 10px rgba(255,255,255,0.4);">Blogs</span></h2>
 
             <section class="bcardhero-section" style="display: flex; justify-content: center; align-items:center; flex-direction: column;">
 
