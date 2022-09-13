@@ -24,6 +24,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 
 <script src="pbp.js" type="module" async></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+  $(".toggle-button").click(function(){
+    // $(".navbar-links").slideToggle("slow");
+    $(".phone-background").css('margin-top', '0');
+  });
+});
+ </script>
 
 <style type="text/css">
 html {
@@ -120,7 +128,7 @@ body{
       }
       .video-container .phone-background{
         display: block;
-        /* margin-top: -20%; */
+        margin-top: -20%;
         z-index: -1;
       }
       .navbar{
@@ -191,7 +199,7 @@ body{
 <header>
    <nav class="navbar" style="position: sticky;" >
         <div class="brand-title">
-        	<img src="Images/TEDxDYPatilUniversityop-removebg-preview.png" class="responsive logo"></div>
+        	<img src="Tedx logos/tedx-logo-webp.webp" class="responsive logo"></div>
         <a href="#" class="toggle-button" >
           <span class="bar"></span>
           <span class="bar"></span>
@@ -219,7 +227,7 @@ body{
       <h1 class="header-landing" style="color: white;" ><text class="ted" style="color: red;">TED<sup style="color: red;">x</sup></text>DYPatilUniversity 2022</h1>
       
     </div>
-      <img class="phone-background" src="Images/phone-background.png" style="width: 100%; height: 100vh;">
+      <img class="phone-background" src="Images/phone-background-webp.webp" style="width: 100%; height: 100vh;">
       <video class="hero-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
     <source src="tedx_vid_01.mp4" type="video/mp4">
   </video>
@@ -1158,6 +1166,7 @@ body{
 	$(document).ready(function(){
   $(".toggle-button").click(function(){
     $(".navbar-links").slideToggle("slow");
+    // $(".phone-background").css('margin-top', '0');
   });
 });
 
